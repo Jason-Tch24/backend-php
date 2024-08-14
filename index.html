@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fetch API Example</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<button id="newBadgeButton">Nouveau Badge</button>
+    <div id="main"></div>
+
+<!-- Fenêtre modale -->
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+	    <div id="modalFormContainer"></div>
+        </div>
+    </div>
+
+    <!-- Lien vers le fichier JavaScript externe -->
+    <script src="script.js"></script>
+    <script>
+        // Appel de la fonction accueil après le chargement du fichier script.js
+        document.addEventListener('DOMContentLoaded', () => {
+            accueil();
+        });
+    </script>
+</body>
+</html>
